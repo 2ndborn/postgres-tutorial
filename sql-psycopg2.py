@@ -14,7 +14,7 @@ cursor = connection.cursor()
 # cursor.execute('SELECT "Name" FROM "Artist"')
 
 # Query 3 - select only "Queen" from the "Artist" table
-# cursor.execute('SELECT * FROM "Artist" WHERE "Name" = %s', ["Alanis Morissette"])
+# cursor.execute('SELECT * FROM "Artist" WHERE "Name" = %s', ["Queen"])
 
 # Query 4 - select only "ArtistId" from the "Artist" table
 # cursor.execute('SELECT * FROM "Artist" WHERE "ArtistId" = %s', [51])
@@ -23,7 +23,7 @@ cursor = connection.cursor()
 # cursor.execute('SELECT * FROM "Album" WHERE "ArtistId" = %s', [51])
 
 # Query 4 - select only "ArtistId" from the "Artist" table
-cursor.execute('SELECT * FROM "Track" WHERE "Composer" = %s', ["Alanis Morissette"])
+cursor.execute('SELECT * FROM "Track" WHERE "Composer" = %s', ["Queen"])
 
 # fetch the results (multiple)
 results = cursor.fetchall()
@@ -37,3 +37,4 @@ connection.close()
 # print result
 for result in results:
     print(result)
+    
