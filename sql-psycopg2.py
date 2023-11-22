@@ -37,4 +37,3 @@ connection.close()
 # print result
 for result in results:
     print(result)
-    
